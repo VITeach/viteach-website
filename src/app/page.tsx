@@ -7,7 +7,7 @@ import React from 'react'
 const Root = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
     <div className='flex flex-col items-center justify-center'>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
