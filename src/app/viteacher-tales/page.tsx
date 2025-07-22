@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Vtales = () => {
-  return (
-    <div>Vtales</div>
-  )
-}
+  return <div>Vtales</div>;
+};
 
-export default Vtales
+export default Vtales;

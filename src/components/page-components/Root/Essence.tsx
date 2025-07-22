@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Essence = () => {
-  return (
-    <div>
-      Essence
-    </div>
-  )
-}
+  return <div>Essence</div>;
+};
 
-export default Essence
+export default Essence;

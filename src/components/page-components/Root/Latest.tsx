@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Latest = () => {
-  return (
-    <div>Latest</div>
-  )
-}
+  return <div>Latest</div>;
+};
 
-export default Latest
+export default Latest;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const BoardMembers = () => {
-  return (
-    <div>BoardMembers</div>
-  )
-}
+  return <div>BoardMembers</div>;
+};
 
-export default BoardMembers
+export default BoardMembers;
