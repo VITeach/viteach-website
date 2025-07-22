@@ -8,11 +8,10 @@ import { MenuIcon, XIcon } from 'lucide-react';
 
 const Navbar = () => {
 
-  const isDesktop = useMediaQuery('(min-width: 768px)');
 
-  if (isDesktop) {
     return (
-      <div className='mx-auto max-w-7xl border-b border-gray-200'>
+      <div>
+      <div className='mx-auto max-w-7xl border-b border-gray-200 max-md:hidden'>
         <div className='flex justify-between items-center p-4'>
           {/* Logo */}
           <div>
@@ -64,12 +63,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    )
-  }
 
 
-  return (
-    <div className='flex justify-between items-center p-4 border-b border-gray-200'>
+    <div className='flex justify-between items-center p-4 border-b border-gray-200 md:hidden'>
       <div>
         <h2 className='text-2xl font-extrabold text-red-900'>VITeach</h2>
       </div>
@@ -98,8 +94,9 @@ const Navbar = () => {
       </Drawer>
 
     </div>
-  )
-}
+    </div>
+    )
+};
 
 
 

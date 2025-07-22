@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import * as motion from "motion/react-client";
 
+// TODO: Make this responsive
+
 const Hero = () => {
   const router = useRouter()
   return (
@@ -40,7 +42,7 @@ const Hero = () => {
             />
           </span>
         </div>
-        <div className='text-sm font-light max-w-md text-gray-800'>
+        <div className='max-w-md text-gray-800'>
           Celebrating 10+ years of inspiring students, sharing knowledge, and making learning fun. Dive into stories, meet our mentors, and be part of our legacy.
         </div>
         <div>
