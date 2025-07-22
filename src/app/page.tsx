@@ -8,14 +8,16 @@ const Root = () => {
   return (
     <div>
       <Navbar />
-      <div className='mx-auto max-w-6xl'>
-        <Hero />
+      <div className='bg-red-50 pt-20'>
+        <div className='mx-auto max-w-6xl'>
+          <Hero />
+        </div>
+      </div>
 
         <About />
 
         <Essence />
 
-      </div>
     </div>
   )
 }

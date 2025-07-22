@@ -16,7 +16,7 @@ const Hero = () => {
       transition={{ duration: 0.5 }}
       className='flex items-center justify-between p-20'>
       <div className='flex flex-col items-start justify-center gap-y-5'>
-        <div className='text-4xl font-bold text-red-900'>
+        <div className='text-4xl font-extrabold exrabold text-red-900'>
           Light a spark and ignite a fire
         </div>
         <div className='text-2xl flex items-center gap-x-2'>
@@ -45,17 +45,35 @@ const Hero = () => {
         <div className='max-w-md text-gray-800'>
           Celebrating 10+ years of inspiring students, sharing knowledge, and making learning fun. Dive into stories, meet our mentors, and be part of our legacy.
         </div>
-        <div>
-          <Button onClick={() => {
-            router.push('/story')
-          }}>
-            Learn more
-          </Button>
+
+        <div className='flex items-center gap-x-2'>
+
+          <div>
+            <Button onClick={() => {
+              router.push('/story')
+            }}>
+              Learn more
+            </Button>
+          </div>
+
+          {/* TODO: Add functionaility to join community */}
+
+          <div>
+            <Button
+              variant='outline'
+              onClick={() => {
+                router.push('/story')
+              }}>
+              Join Our Community
+            </Button>
+          </div>
         </div>
       </div>
       <div className='p-20 rounded-full'>
         <Image src="book-lover.svg" alt="Hero" width={250} height={250} />
       </div>
+
+
 
     </motion.div>
   )
