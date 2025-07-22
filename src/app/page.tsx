@@ -1,22 +1,31 @@
-'use client';
 import Navbar from '@/components/Navbar';
 import About from '@/components/page-components/Root/About';
 import Essence from '@/components/page-components/Root/Essence';
 import Hero from '@/components/page-components/Root/Hero';
 
+// Well, respectfully, future me, REMEMBER THE FUCKING PADDING AND THE FUCKING 5PY PADDING
+
 const Root = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-red-50 pt-20">
+      <div className="py-5">
         <div className="mx-auto max-w-6xl">
           <Hero />
         </div>
       </div>
 
-      <About />
+      <div className="bg-red-50 py-5">
+        <div className="mx-auto max-w-6xl">
+          <About />
+        </div>
+      </div>
 
-      <Essence />
+      <div className="py-5">
+        <div className="mx-auto max-w-6xl">
+          <Essence />
+        </div>
+      </div>
     </div>
   );
 };

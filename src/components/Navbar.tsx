@@ -64,7 +64,7 @@ const Navbar = () => {
           {/* Buttons */}
           <div className="flex gap-x-2">
             <Button variant="outline">Login</Button>
-            <Button variant="default">Sign up</Button>
+            <Button variant="default">Join our community</Button>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ const Navbar = () => {
               <Link href="/story">Our Story</Link>
               <Link href="/viteacher-tales">VITeacher Tales</Link>
               <Button variant="outline">Login</Button>
-              <Button variant="default">Sign up</Button>
+              <Button variant="default">Join our community</Button>
             </div>
           </DrawerContent>
         </Drawer>

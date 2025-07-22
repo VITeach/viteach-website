@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import React from 'react';
@@ -6,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import * as motion from 'motion/react-client';
 
 // TODO: Make this responsive
+// JUST REMEMBER THE FUCK THAT I HAVE TO PUT FUCKING 20PX PADDING AND 10PY PADDING
 
 const Hero = () => {
   const router = useRouter();
@@ -14,11 +16,11 @@ const Hero = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex items-center justify-between p-20"
+      className="flex items-center justify-between px-20 pb-10 pt-20"
     >
       <div className="flex flex-col items-start justify-center gap-y-5">
         <div className="text-4xl font-extrabold exrabold text-red-900">
-          Light a spark and ignite a fire
+          Light a spark, ignite a fire.
         </div>
         <div className="text-2xl flex items-center gap-x-2">
           <span className="font-light">We</span>
@@ -26,13 +28,13 @@ const Hero = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString('teach')
+                  .typeString('teach!')
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString('inspire')
+                  .typeString('inspire!')
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString('change lives')
+                  .typeString('change lives!')
                   .pauseFor(1000)
                   .start();
               }}
@@ -53,24 +55,22 @@ const Hero = () => {
         <div className="flex items-center gap-x-2">
           <div>
             <Button
-              onClick={() => {
-                router.push('/story');
-              }}
-            >
-              Learn more
-            </Button>
-          </div>
-
-          {/* TODO: Add functionaility to join community */}
-
-          <div>
-            <Button
               variant="outline"
               onClick={() => {
                 router.push('/story');
               }}
             >
-              Join Our Community
+              Digital Library
+            </Button>
+          </div>
+
+          <div>
+            <Button
+              onClick={() => {
+                router.push('/story');
+              }}
+            >
+              Learn more
             </Button>
           </div>
         </div>
