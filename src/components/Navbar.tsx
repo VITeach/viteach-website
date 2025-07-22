@@ -4,7 +4,7 @@ import { NavigationMenu, NavigationMenuLink, NavigationMenuItem, NavigationMenuL
 import Link from 'next/link';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { Drawer, DrawerClose, DrawerContent, DrawerTitle, DrawerTrigger } from './ui/drawer';
-import { CrossIcon, MenuIcon, XIcon } from 'lucide-react';
+import { MenuIcon, XIcon } from 'lucide-react';
 
 const Navbar = () => {
 
@@ -12,11 +12,11 @@ const Navbar = () => {
 
   if (isDesktop) {
     return (
-      <div className='mx-auto max-w-7xl'>
+      <div className='mx-auto max-w-7xl border-b border-gray-200'>
         <div className='flex justify-between items-center p-4'>
           {/* Logo */}
           <div>
-            <h2 className='text-2xl font-extrabold'>VITeach</h2>
+            <h2 className='text-2xl font-extrabold text-red-900'>VITeach</h2>
           </div>
 
           {/* Navigation Links */}
@@ -66,41 +66,41 @@ const Navbar = () => {
       </div>
     )
   }
-  else {
-    return (
-      <div className='flex justify-between items-center p-4'>
-        <div>
-          <h2 className='text-2xl font-extrabold'>VITeach</h2>
-        </div>
 
-        <Drawer direction='right'>
-          <DrawerTrigger>
-            <MenuIcon />
-          </DrawerTrigger>
-          <DrawerContent>
-            <div className='flex justify-between items-center p-4'>
-              <DrawerClose className='absolute top-4 right-4' asChild>
-                <XIcon />
-              </DrawerClose>
-              <DrawerTitle className='text-2xl font-extrabold'>Menu</DrawerTitle>
-            </div>
-            <div className='flex flex-col gap-y-2 m-5 text-lg'>
-              <Link href="/blogs">Blogs</Link>
-              <Link href="/content">Content</Link>
-              <Link href="/story">Our Story</Link>
-              <Link href="/viteacher-tales">VITeacher Tales</Link>
-              <Button variant="outline">Login</Button>
-              <Button variant="default">Sign up</Button>
-            </div>
 
-          </DrawerContent>
-        </Drawer>
-
+  return (
+    <div className='flex justify-between items-center p-4 border-b border-gray-200'>
+      <div>
+        <h2 className='text-2xl font-extrabold text-red-900'>VITeach</h2>
       </div>
-    )
-  }
 
+      <Drawer direction='right'>
+        <DrawerTrigger>
+          <MenuIcon />
+        </DrawerTrigger>
+        <DrawerContent>
+          <div className='flex justify-between items-center p-4'>
+            <DrawerClose className='absolute top-4 right-4' asChild>
+              <XIcon />
+            </DrawerClose>
+            <DrawerTitle className='text-2xl font-extrabold'>Menu</DrawerTitle>
+          </div>
+          <div className='flex flex-col gap-y-2 m-5 text-lg'>
+            <Link href="/blogs">Blogs</Link>
+            <Link href="/content">Content</Link>
+            <Link href="/story">Our Story</Link>
+            <Link href="/viteacher-tales">VITeacher Tales</Link>
+            <Button variant="outline">Login</Button>
+            <Button variant="default">Sign up</Button>
+          </div>
 
+        </DrawerContent>
+      </Drawer>
+
+    </div>
+  )
 }
+
+
 
 export default Navbar
