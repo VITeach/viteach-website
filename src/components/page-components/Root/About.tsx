@@ -1,5 +1,5 @@
 import IconCard from '@/components/IconCard';
-import { AwardIcon, BookOpenIcon, TargetIcon, UsersIcon } from 'lucide-react';
+import { BookOpenIcon, TargetIcon, UsersIcon } from 'lucide-react';
 import React from 'react';
 
 const CardList = [
