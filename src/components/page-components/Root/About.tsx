@@ -1,5 +1,6 @@
 import IconCard from '@/components/IconCard';
 import { BookOpenIcon, TargetIcon, UsersIcon } from 'lucide-react';
+import * as motion from 'motion/react-client';
 import React from 'react';
 
 const CardList = [
@@ -27,7 +28,12 @@ const CardList = [
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-8 py-10 px-20">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center justify-center gap-y-8 py-10 px-20"
+    >
       <h2 className="text-3xl font-bold text-red-900 text-center">About</h2>
       <div className="text-center text-gray-800">
         VITeach is a non-profit organization founded and run by a group of
@@ -49,7 +55,7 @@ const About = () => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

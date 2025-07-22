@@ -13,15 +13,19 @@ const Hero = () => {
   const router = useRouter();
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       className="flex items-center justify-between px-20 pb-10 pt-20"
     >
       <div className="flex flex-col items-start justify-center gap-y-5">
-        <div className="text-4xl font-extrabold exrabold text-red-900">
+        <motion.div
+          className="text-4xl font-extrabold exrabold text-red-900"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Light a spark, ignite a fire.
-        </div>
+        </motion.div>
         <div className="text-2xl flex items-center gap-x-2">
           <span className="font-light">We</span>
           <span className="text-2xl font-bold text-red-900">
@@ -75,9 +79,19 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="p-20 rounded-full">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          type: 'spring',
+          stiffness: 5, // adjust as needed
+          damping: 10, // adjust as needed
+        }}
+        whileHover={{ scale: 1.2 }}
+        className="p-20 rounded-full"
+      >
         <Image src="book-lover.svg" alt="Hero" width={250} height={250} />
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
