@@ -72,18 +72,18 @@ const Navbar = () => {
         <div>
           <h2 className='text-2xl font-extrabold'>VITeach</h2>
         </div>
-        
+
         <Drawer direction='right'>
           <DrawerTrigger>
-            <MenuIcon/>
+            <MenuIcon />
           </DrawerTrigger>
           <DrawerContent>
-            <DrawerClose className='absolute top-4 right-4' asChild>
-              <XIcon />
-            </DrawerClose>
-            <DrawerTitle>
-              <h2 className='text-2xl font-extrabold p-4'>Menu</h2>
-            </DrawerTitle>
+            <div className='flex justify-between items-center p-4'>
+              <DrawerClose className='absolute top-4 right-4' asChild>
+                <XIcon />
+              </DrawerClose>
+              <DrawerTitle className='text-2xl font-extrabold'>Menu</DrawerTitle>
+            </div>
             <div className='flex flex-col gap-y-2 m-5 text-lg'>
               <Link href="/blogs">Blogs</Link>
               <Link href="/content">Content</Link>
