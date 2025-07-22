@@ -1,4 +1,5 @@
 "use client"
+import Navbar from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import * as motion from "motion/react-client";
 import React from 'react'
@@ -6,6 +7,8 @@ import React from 'react'
 const Root = () => {
   return (
     <div>
+      <Navbar />
+    <div className='flex flex-col items-center justify-center'>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,6 +21,7 @@ const Root = () => {
           }}>Click me</Button>
         </div>
       </motion.div>
+    </div>
     </div>
   )
 }
