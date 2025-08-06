@@ -23,7 +23,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center p-4">
           {/* Logo */}
           <div>
-            <h2 className="text-2xl font-extrabold text-red-900">VITeach</h2>
+            <Link href="/">
+              <h2 className="text-2xl font-extrabold text-red-900">VITeach</h2>
+            </Link>
           </div>
 
           {/* Navigation Links */}
