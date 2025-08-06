@@ -29,13 +29,13 @@ const Root = () => {
         </div>
       </div>
 
-      <div className="py-5">
+      <div className="py-5 bg-red-50">
         <div className="mx-auto max-w-6xl">
           <Showcase />
         </div>
       </div>
 
-      <div className="py-5 bg-red-50">
+      <div className="py-5">
         <div className="mx-auto max-w-6xl">
           <Footer />
         </div>
