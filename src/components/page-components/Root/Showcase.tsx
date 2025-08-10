@@ -35,6 +35,10 @@ const Showcase = () => {
       <h2 className="text-3xl font-bold text-red-900 text-center pb-6">
         Showcase
       </h2>
+      <div className="text-center text-gray-900 pb-10">
+        Explore our platform and see how we&apos;re making a difference in
+        education
+      </div>
       {/* I'll put here three cards components for viteacher tales, blogs and digital library*/}
       <div className="flex justify-between items-start gap-x-10 gap-y-5">
         {cardContent.map((card) => (
