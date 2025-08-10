@@ -65,7 +65,8 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="flex gap-x-2">
-            <Button variant="outline">Login</Button>
+            {/* WARN: DO NOT REMOVE THIS BUTTON, I'll add functionality to it later */}
+            {/* <Button variant="outline">Login</Button> */}
             <Button variant="default">Join our community</Button>
           </div>
         </div>

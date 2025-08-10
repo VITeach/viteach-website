@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 import About from '@/components/page-components/Root/About';
 import Essence from '@/components/page-components/Root/Essence';
 import Hero from '@/components/page-components/Root/Hero';
@@ -11,7 +9,6 @@ import Showcase from '@/components/page-components/Root/Showcase';
 const Root = () => {
   return (
     <div>
-      <Navbar />
       <div className="py-5">
         <div className="mx-auto max-w-6xl">
           <Hero />
@@ -39,12 +36,6 @@ const Root = () => {
       <div className="py-5">
         <div className="mx-auto max-w-6xl">
           <Latest />
-        </div>
-      </div>
-
-      <div className="py-5 bg-red-50">
-        <div className="mx-auto max-w-6xl">
-          <Footer />
         </div>
       </div>
     </div>
