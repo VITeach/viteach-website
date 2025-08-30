@@ -45,17 +45,17 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/* Our Story */}
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/story">Our Story</Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-
                 {/* Tales */}
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link href="/viteacher-tales">VITeacher Tales</Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* Our Story */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link href="/story">Our Story</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
