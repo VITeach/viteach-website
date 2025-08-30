@@ -5,12 +5,12 @@ import { notFound } from 'next/navigation';
 
 const subjects = ['science', 'maths', 'english'];
 
-export default function DigitalLibraryContent({
+export default async function DigitalLibraryContent({
   params,
 }: {
-  params: { grade: string; subject: string };
+  params: Promise<{ grade: string; subject: string }>;
 }) {
-  const { grade, subject } = params;
+  const { grade, subject } = await params;
   const classNumber = parseInt(grade, 10);
 
   if (isNaN(classNumber) || classNumber < 1 || classNumber > 12) {
