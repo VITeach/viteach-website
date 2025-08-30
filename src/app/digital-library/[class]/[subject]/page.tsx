@@ -2,14 +2,14 @@ import { notFound } from 'next/navigation';
 
 const subjects = ['science', 'maths', 'english'];
 
-const DigitalLibraryContent = async ({
-  params,
-}: {
+interface PageProps {
   params: {
     class: string;
     subject: string;
   };
-}) => {
+}
+
+const DigitalLibraryContent = ({ params }: PageProps) => {
   const { class: classParam, subject: subjectParam } = params; // Don't trust the linter, it is needed
 
   const classNumber = parseInt(classParam);
