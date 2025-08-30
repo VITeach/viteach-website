@@ -48,14 +48,9 @@ const Hero = () => {
             text="Digital Library"
             onClickRoute="/story"
             variant="outline"
-            className="w-full sm:w-auto"
           />
 
-          <CustomButton
-            text="Learn more"
-            onClickRoute="/story"
-            className="w-full sm:w-auto"
-          />
+          <CustomButton text="Learn more" onClickRoute="/story" />
         </div>
       </div>
       <motion.div
