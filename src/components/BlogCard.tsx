@@ -22,9 +22,9 @@ const BlogCard = ({
   const router = useRouter();
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:border-red-200 w-full max-w-md">
+    <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:border-red-200 w-full">
       {/* Image Container */}
-      <div className="relative h-48 w-full overflow-hidden">
+      <div className="relative h-40 sm:h-48 w-full overflow-hidden">
         <Image
           src={image}
           alt={title}
@@ -36,9 +36,9 @@ const BlogCard = ({
       </div>
 
       {/* Content Container */}
-      <div className="p-6 space-y-4">
+      <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
         {/* Title */}
-        <h3 className="text-xl font-bold text-red-900 line-clamp-2 group-hover:text-gray-900 transition-colors duration-200">
+        <h3 className="text-lg sm:text-xl font-bold text-red-900 line-clamp-2 group-hover:text-red-800 transition-colors duration-200">
           {title}
         </h3>
 
@@ -48,7 +48,7 @@ const BlogCard = ({
         </p>
 
         {/* Meta Information */}
-        <div className="flex items-center justify-between text-sm text-gray-500">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500 space-y-1 sm:space-y-0">
           <span className="font-medium text-red-900">{author}</span>
           <span className="italic">{date}</span>
         </div>
@@ -56,7 +56,7 @@ const BlogCard = ({
         {/* Read More Button */}
         <Button
           variant="outline"
-          className="w-full"
+          className="w-full text-sm sm:text-base"
           onClick={() => router.push(link)}
         >
           Read More
