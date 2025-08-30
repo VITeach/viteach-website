@@ -10,7 +10,7 @@ const DigitalLibraryContent = async ({
     subject: string;
   };
 }) => {
-  const { class: classParam, subject: subjectParam } = await params; // Don't trust the linter, it is needed
+  const { class: classParam, subject: subjectParam } = params; // Don't trust the linter, it is needed
 
   const classNumber = parseInt(classParam);
 
