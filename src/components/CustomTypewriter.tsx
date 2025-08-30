@@ -17,7 +17,7 @@ const CustomTypewriter = ({
   return (
     <Typewriter
       onInit={(typewriter) => {
-        strings.forEach((str, idx) => {
+        strings.forEach((str) => {
           typewriter.typeString(str).pauseFor(delay).deleteAll();
         });
         typewriter.start();
