@@ -1,9 +1,10 @@
-import About from '@/components/page-components/Root/About';
-import Essence from '@/components/page-components/Root/Essence';
-import Hero from '@/components/page-components/Root/Hero';
-import Latest from '@/components/page-components/Root/Latest';
-import Showcase from '@/components/page-components/Root/Showcase';
-
+import {
+  About,
+  Essence,
+  Hero,
+  Latest,
+  Showcase,
+} from '@/components/page-components/root';
 // Well, respectfully, future me, REMEMBER THE FUCKING PADDING AND THE FUCKING 5PY PADDING
 
 const Root = () => {
