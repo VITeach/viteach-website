@@ -4,14 +4,14 @@ import { images } from '@/constants/essence-images';
 
 const Essence = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-8 py-6 px-4 sm:py-10 sm:px-20">
-      <h2 className="text-2xl sm:text-3xl font-bold text-red-900 text-center">
+    <div className="flex flex-col items-center justify-center gap-y-6 sm:gap-y-8 lg:gap-y-12 py-6 px-4 sm:py-10 sm:px-8 md:px-16 lg:px-20 xl:px-24">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-red-900 text-center px-2 sm:px-4">
         Our Essence
       </h2>
-      <div className="w-full">
+      <div className="w-full max-w-7xl">
         <SlidingImg images={images} />
       </div>
-      <div className="px-4 text-center text-gray-800">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 text-center text-gray-800 text-sm sm:text-base max-w-4xl mx-auto leading-relaxed">
         At VITeach, our essence lies in the belief that education is the
         foundation for true empowerment — not just academic learning, but the
         growth of confident, compassionate individuals. Since 2013, we&apos;ve

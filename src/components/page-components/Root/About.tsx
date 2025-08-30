@@ -1,30 +1,7 @@
 import IconCard from '@/components/IconCard';
-import { BookOpenIcon, TargetIcon, UsersIcon } from 'lucide-react';
+import { cardList } from '@/constants/card-list-data';
 import * as motion from 'motion/react-client';
 import React from 'react';
-
-const CardList = [
-  {
-    key: 1,
-    icon: <TargetIcon />,
-    title: 'Mission Driven',
-    description: 'Passionate about creating positive change in education',
-  },
-
-  {
-    key: 2,
-    icon: <UsersIcon />,
-    title: 'Community Driven',
-    description: 'Building a strong, supportive network of educators.',
-  },
-
-  {
-    key: 3,
-    icon: <BookOpenIcon />,
-    title: '10+ Years',
-    description: 'Of continuous growth and innovation in education',
-  },
-];
 
 const About = () => {
   return (
@@ -32,10 +9,12 @@ const About = () => {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col items-center justify-center gap-y-8 py-10 px-20"
+      className="flex flex-col items-center justify-center gap-y-6 sm:gap-y-8 py-6 sm:py-8 lg:py-10 px-4 sm:px-8 lg:px-20"
     >
-      <h2 className="text-3xl font-bold text-red-900 text-center">About</h2>
-      <div className="text-center text-gray-800">
+      <h2 className="text-2xl sm:text-3xl font-bold text-red-900 text-center">
+        About
+      </h2>
+      <div className="text-center text-gray-800 text-sm sm:text-base max-w-4xl mx-auto px-4">
         VITeach is a non-profit organization founded and run by a group of
         motivated students from Vellore Institute of Technology, Chennai, who
         are driven by the passion for change. With an assortment of{' '}
@@ -45,8 +24,8 @@ const About = () => {
         the years.
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
-        {CardList.map((card) => (
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-x-10 lg:gap-y-5 w-full max-w-6xl">
+        {cardList.map((card) => (
           <IconCard
             key={card.key}
             icon={card.icon}
