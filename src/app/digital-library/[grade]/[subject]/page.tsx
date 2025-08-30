@@ -10,7 +10,10 @@ interface PageProps {
 }
 
 const DigitalLibraryContent = ({ params }: PageProps) => {
-  const { class: classParam, subject: subjectParam } = params; // Don't trust the linter, it is needed
+  const { class: classParam, subject: subjectParam } = params;
+  // If you are seeing this, then the issue probably got fixed and I never cared about removing this comment
+  // Just so you know, I was debugging this in production (because who the fk needs tests)
+  // Also, nextjs is so shitty that it doesn't let me name a dynamic route to be class because it might break something
 
   const classNumber = parseInt(classParam);
 
