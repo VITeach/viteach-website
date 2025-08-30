@@ -1,0 +1,18 @@
+# To start the database if you don't know how use docker, run:
+# pnpm run db:start
+# To stop the database, run:
+# pnpm run db:stop
+# PS: Just make sure you have docker installed and running (by running `docker ps` in your terminal)
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - '5432:5432'
+# # Uncomment this incase you want to use a volume to persist the data
+# volumes:
+#   db_data:
