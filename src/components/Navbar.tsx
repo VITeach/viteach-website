@@ -28,13 +28,13 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="">
+          <div>
             <NavigationMenu>
               <NavigationMenuList>
-                {/* Blogs */}
+                {/* Our Story */}
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/blogs">Blogs</Link>
+                    <Link href="/story">Our Story</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -45,17 +45,10 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {/* Tales */}
+                {/* Team */}
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/viteacher-tales">VITeacher Tales</Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-
-                {/* Our Story */}
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/story">Our Story</Link>
+                    <Link href="/team">The Team</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -98,10 +91,9 @@ const Navbar = () => {
               </DrawerTitle>
             </div>
             <div className="flex flex-col gap-y-2 m-5 text-lg">
-              <Link href="/blogs">Blogs</Link>
-              <Link href="/content">Content</Link>
               <Link href="/story">Our Story</Link>
-              <Link href="/viteacher-tales">VITeacher Tales</Link>
+              <Link href="/content">Digital Library</Link>
+              <Link href="/team">The Team</Link>
               <CustomButton
                 text="Login"
                 variant="outline"
