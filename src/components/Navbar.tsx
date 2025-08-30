@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="relative">
+          <div className="">
             <NavigationMenu>
               <NavigationMenuList>
                 {/* Blogs */}
