@@ -1,17 +1,15 @@
 import { notFound } from 'next/navigation';
 
-type DigitalLibraryContentProps = {
-  params: {
-    class: string;
-    subject: string;
-  };
-};
-
 const subjects = ['science', 'maths', 'english'];
 
 const DigitalLibraryContent = async ({
   params,
-}: DigitalLibraryContentProps) => {
+}: {
+  params: {
+    class: string;
+    subject: string;
+  };
+}) => {
   const { class: classParam, subject: subjectParam } = await params; // Don't trust the linter, it is needed
 
   const classNumber = parseInt(classParam);
