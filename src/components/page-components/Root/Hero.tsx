@@ -1,13 +1,10 @@
-'use client';
 import Image from 'next/image';
-import Typewriter from 'typewriter-effect';
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
 import * as motion from 'motion/react-client';
+import CustomButton from '@/components/CustomButton';
+import CustomTypewriter from '@/components/CustomTypewriter';
 
 const Hero = () => {
-  const router = useRouter();
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -26,24 +23,8 @@ const Hero = () => {
         <div className="text-xl sm:text-2xl flex items-center gap-x-2 justify-center lg:justify-start">
           <span className="font-light">We</span>
           <span className="text-xl sm:text-2xl font-bold text-red-900">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString('teach!')
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString('inspire!')
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString('change lives!')
-                  .pauseFor(1000)
-                  .start();
-              }}
-              options={{
-                loop: true,
-                delay: 100,
-                autoStart: true,
-              }}
+            <CustomTypewriter
+              strings={['teach!', 'inspire!', 'change lives!']}
             />
           </span>
         </div>
@@ -63,28 +44,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row items-center gap-y-2 sm:gap-y-0 gap-x-2">
-          <div>
-            <Button
-              variant="outline"
-              onClick={() => {
-                router.push('/story');
-              }}
-              className="w-full sm:w-auto"
-            >
-              Digital Library
-            </Button>
-          </div>
+          <CustomButton
+            text="Digital Library"
+            onClickRoute="/story"
+            variant="outline"
+            className="w-full sm:w-auto"
+          />
 
-          <div>
-            <Button
-              onClick={() => {
-                router.push('/story');
-              }}
-              className="w-full sm:w-auto"
-            >
-              Learn more
-            </Button>
-          </div>
+          <CustomButton
+            text="Learn more"
+            onClickRoute="/story"
+            className="w-full sm:w-auto"
+          />
         </div>
       </div>
       <motion.div

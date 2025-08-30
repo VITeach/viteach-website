@@ -1,8 +1,6 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Button } from './ui/button';
-import { useRouter } from 'next/navigation';
+import CustomButton from './CustomButton';
 
 const BlogCard = ({
   title,
@@ -19,8 +17,6 @@ const BlogCard = ({
   image: string;
   link: string;
 }) => {
-  const router = useRouter();
-
   return (
     <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:border-red-200 w-full">
       {/* Image Container */}
@@ -54,13 +50,7 @@ const BlogCard = ({
         </div>
 
         {/* Read More Button */}
-        <Button
-          variant="outline"
-          className="w-full text-sm sm:text-base"
-          onClick={() => router.push(link)}
-        >
-          Read More
-        </Button>
+        <CustomButton text="Read More" onClickRoute={link} />
       </div>
     </div>
   );

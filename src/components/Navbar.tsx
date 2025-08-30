@@ -1,5 +1,3 @@
-import React from 'react';
-import { Button } from './ui/button';
 import {
   NavigationMenu,
   NavigationMenuLink,
@@ -15,6 +13,7 @@ import {
   DrawerTrigger,
 } from './ui/drawer';
 import { MenuIcon, XIcon } from 'lucide-react';
+import CustomButton from './CustomButton';
 
 const Navbar = () => {
   return (
@@ -66,8 +65,16 @@ const Navbar = () => {
           {/* Buttons */}
           <div className="flex gap-x-2">
             {/* WARN: DO NOT REMOVE THIS BUTTON, I'll add functionality to it later */}
-            {/* <Button variant="outline">Login</Button> */}
-            <Button variant="default">Join our community</Button>
+            <CustomButton
+              text="Login"
+              variant="outline"
+              onClickRoute="/login"
+            />
+            <CustomButton
+              text="Join our community"
+              variant="default"
+              onClickRoute="/join"
+            />
           </div>
         </div>
       </div>
@@ -95,8 +102,16 @@ const Navbar = () => {
               <Link href="/content">Content</Link>
               <Link href="/story">Our Story</Link>
               <Link href="/viteacher-tales">VITeacher Tales</Link>
-              <Button variant="outline">Login</Button>
-              <Button variant="default">Join our community</Button>
+              <CustomButton
+                text="Login"
+                variant="outline"
+                onClickRoute="/login"
+              />
+              <CustomButton
+                text="Join our community"
+                variant="default"
+                onClickRoute="/join"
+              />
             </div>
           </DrawerContent>
         </Drawer>

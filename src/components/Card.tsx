@@ -1,8 +1,6 @@
-'use client';
 import Image from 'next/image';
-import { Button } from './ui/button';
-import { useRouter } from 'next/navigation';
 import * as motion from 'motion/react-client';
+import CustomButton from './CustomButton';
 
 const Card = ({
   title,
@@ -15,12 +13,9 @@ const Card = ({
   image: string;
   link: string;
 }) => {
-  const router = useRouter();
-
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
       transition={{ duration: 0.2 }}
       className="flex flex-col items-center justify-center gap-y-5 rounded-lg p-4 border border-red-200 w-72"
     >
@@ -32,7 +27,7 @@ const Card = ({
       <div className="text-md text-gray-500 max-w-60 py-4 flex flex-col gap-y-4">
         <div>{description}</div>
         <div>
-          <Button onClick={() => router.push(link)}>Read More</Button>
+          <CustomButton text="Read More" onClickRoute={link} />
         </div>
       </div>
     </motion.div>
