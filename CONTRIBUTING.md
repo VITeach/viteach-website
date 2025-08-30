@@ -1,4 +1,4 @@
-# Folder Structure and Naming Convention Guide
+# Folder Structure and Naming Convention Guide (WILL CHANGE THIS SOON)
 
 ## Overview
 
