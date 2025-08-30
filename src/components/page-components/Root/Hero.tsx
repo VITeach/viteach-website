@@ -13,7 +13,7 @@ const Hero = () => {
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col lg:flex-row items-center justify-between px-5 sm:px-10 lg:px-20 pb-10 pt-20 gap-8 lg:gap-0"
+      className="flex flex-col lg:flex-row items-center justify-between px-5 sm:px-10 lg:px-20 xl:pb-10 pt-20 gap-8 lg:gap-0"
     >
       <div className="flex flex-col items-center lg:items-start justify-center gap-y-5 text-center lg:text-left">
         <motion.div
@@ -62,7 +62,7 @@ const Hero = () => {
           of our legacy.
         </div>
 
-        <div className="flex flex-col flex-row items-center gap-y-2 sm:gap-y-0 gap-x-2">
+        <div className="flex flex-row items-center gap-y-2 sm:gap-y-0 gap-x-2">
           <div>
             <Button
               variant="outline"
