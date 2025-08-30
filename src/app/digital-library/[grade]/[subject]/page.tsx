@@ -1,18 +1,15 @@
+// If you are seeing this, then the issue probably got fixed and I never cared about removing this comment
+// Just so you know, I was debugging this in production (because who the fk needs tests)
+// Also, nextjs is so shitty that it doesn't let me name a dynamic route to be class because it might break something
 import { notFound } from 'next/navigation';
 
 const subjects = ['science', 'maths', 'english'];
 
-interface PageProps {
-  params: {
-    grade: string;
-    subject: string;
-  };
-}
-
-const DigitalLibraryContent = ({ params }: PageProps) => {
-  // If you are seeing this, then the issue probably got fixed and I never cared about removing this comment
-  // Just so you know, I was debugging this in production (because who the fk needs tests)
-  // Also, nextjs is so shitty that it doesn't let me name a dynamic route to be class because it might break something
+export default function DigitalLibraryContent({
+  params,
+}: {
+  params: { grade: string; subject: string };
+}) {
   const { grade, subject } = params;
   const classNumber = parseInt(grade, 10);
 
@@ -33,6 +30,4 @@ const DigitalLibraryContent = ({ params }: PageProps) => {
       </div>
     </div>
   );
-};
-
-export default DigitalLibraryContent;
+}
