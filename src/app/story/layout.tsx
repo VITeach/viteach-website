@@ -1,4 +1,4 @@
-const ViteacherTaleLayout = ({ children }: { children: React.ReactNode }) => {
+const StoryLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <article className="max-w-4xl mx-auto px-4 py-8 my-10">
@@ -8,4 +8,4 @@ const ViteacherTaleLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default ViteacherTaleLayout;
+export default StoryLayout;
