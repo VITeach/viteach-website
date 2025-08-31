@@ -18,9 +18,10 @@ const ObsGrid = () => {
             title={obs.role}
             description={obs.about}
             imageUrl={obs.image}
-            githubUrl={obs.github}
-            twitterUrl={obs.X}
-            linkedinUrl={obs.linkedIn}
+            githubUrl={'github' in obs ? obs.github : ''}
+            twitterUrl={'X' in obs ? obs.X : ''}
+            linkedinUrl={'linkedIn' in obs ? obs.linkedIn : ''}
+            instagramUrl={'instagram' in obs ? obs.instagram : ''}
           />
         ))
       )}

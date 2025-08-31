@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as motion from 'motion/react-client';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export interface ProfileCardProps {
@@ -12,6 +12,7 @@ export interface ProfileCardProps {
   githubUrl?: string;
   twitterUrl?: string;
   linkedinUrl?: string;
+  instagramUrl?: string;
   className?: string;
 }
 
@@ -24,6 +25,7 @@ export function ProfileCard(props: ProfileCardProps) {
     githubUrl,
     twitterUrl,
     linkedinUrl,
+    instagramUrl,
     className,
   } = props;
 
@@ -31,6 +33,7 @@ export function ProfileCard(props: ProfileCardProps) {
     { icon: Github, url: githubUrl, label: 'GitHub' },
     { icon: Twitter, url: twitterUrl, label: 'Twitter' },
     { icon: Linkedin, url: linkedinUrl, label: 'LinkedIn' },
+    { icon: Instagram, url: instagramUrl, label: 'Instagram' },
   ];
 
   return (
@@ -80,7 +83,7 @@ export function ProfileCard(props: ProfileCardProps) {
                 href={url || ''}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-900 dark:bg-gray-100 rounded-full flex items-center justify-center transition-colors hover:bg-gray-800 dark:hover:bg-gray-200"
+                className={`w-12 h-12 bg-primary rounded-full flex items-center justify-center transition-colors hover:bg-primary/75 ${url ? 'opacity-100' : 'hidden'}`}
                 aria-label={label}
               >
                 <Icon className="w-5 h-5 text-white dark:text-gray-900" />

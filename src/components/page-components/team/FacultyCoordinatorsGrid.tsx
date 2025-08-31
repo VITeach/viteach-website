@@ -8,8 +8,9 @@ const FacultyCoordinatorsGrid = () => {
         <ProfileCard
           key={faculty.key}
           name={faculty.name}
-          linkedinUrl={faculty.linkedIn}
           imageUrl={faculty.image}
+          linkedinUrl={'linkedIn' in faculty ? faculty.linkedIn : ''}
+          instagramUrl={'instagram' in faculty ? faculty.instagram : ''}
         />
       ))}
     </div>
