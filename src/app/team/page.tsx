@@ -50,7 +50,7 @@ const BoardMembers = () => {
               impactful work.
             </div>
           </div>
-          <div className="pt-4">
+          <div className="pt-4 max-w-2xl mx-auto">
             <FacultyCoordinatorsGrid />
           </div>
         </div>
