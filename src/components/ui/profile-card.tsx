@@ -34,7 +34,12 @@ export function ProfileCard(props: ProfileCardProps) {
   ];
 
   return (
-    <div className={cn('w-full max-w-4xl mx-auto px-4', className)}>
+    <div
+      className={cn(
+        'w-full max-w-4xl mx-auto px-4 border-red-100 border-2 p-4 rounded-4xl bg-white',
+        className
+      )}
+    >
       {/* Mobile */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

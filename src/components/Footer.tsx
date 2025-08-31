@@ -18,44 +18,8 @@ const Footer = () => {
   return (
     <footer className="space-y-16 pt-10 pb-8 px-4">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 justify-items-center">
-          {/* Contact Us */}
-          <div className="space-y-4 text-center md:text-left">
-            <h3 className="text-xl font-bold text-red-900">Contact Us</h3>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-red-900 flex-shrink-0" />
-                <a
-                  href="https://share.google.com/nri6J8HbXml6ad6oO"
-                  className="text-red-900 hover:text-red-700 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  VIT Chennai Campus
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-red-900 flex-shrink-0" />
-                <a
-                  href="tel:+919566009801"
-                  className="text-red-900 hover:text-red-700 transition-colors"
-                >
-                  +91 95660 09801
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-red-900 flex-shrink-0" />
-                <a
-                  href="mailto:viteach.vitcc@gmail.com"
-                  className="text-red-900 hover:text-red-700 transition-colors"
-                >
-                  viteach.vitcc@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center items-start gap-8 md:justify-between">
           {/* Must Visit */}
           <div className="space-y-4 text-center md:text-left">
             <h3 className="text-xl font-bold text-red-900">Must Visit</h3>
@@ -133,6 +97,42 @@ const Footer = () => {
                 <Youtube className="w-4 h-4 flex-shrink-0" />
                 YouTube
               </a>
+            </div>
+          </div>
+
+          {/* Contact Us */}
+          <div className="space-y-4 text-center md:text-left">
+            <h3 className="text-xl font-bold text-red-900">Contact Us</h3>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <MapPin className="w-4 h-4 text-red-900 flex-shrink-0" />
+                <a
+                  href="https://share.google.com/nri6J8HbXml6ad6oO"
+                  className="text-red-900 hover:text-red-700 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VIT Chennai Campus
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-red-900 flex-shrink-0" />
+                <a
+                  href="tel:+919566009801"
+                  className="text-red-900 hover:text-red-700 transition-colors"
+                >
+                  +91 95660 09801
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-red-900 flex-shrink-0" />
+                <a
+                  href="mailto:viteach.vitcc@gmail.com"
+                  className="text-red-900 hover:text-red-700 transition-colors"
+                >
+                  viteach.vitcc@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -21,11 +21,9 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl max-md:hidden">
         <div className="flex justify-between items-center p-4">
           {/* Logo */}
-          <div>
-            <Link href="/">
-              <h2 className="text-2xl font-extrabold text-red-900">VITeach</h2>
-            </Link>
-          </div>
+          <Link href="/">
+            <div className="text-2xl font-extrabold text-red-900">VITeach</div>
+          </Link>
 
           {/* Navigation Links */}
           <div>
@@ -57,7 +55,6 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="flex gap-x-2">
-            {/* WARN: DO NOT REMOVE THIS BUTTON, I'll add functionality to it later */}
             <CustomButton
               text="Login"
               variant="outline"

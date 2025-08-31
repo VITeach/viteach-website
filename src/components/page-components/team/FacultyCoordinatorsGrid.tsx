@@ -3,7 +3,7 @@ import { ProfileCard } from '@/components/ui/profile-card';
 
 const FacultyCoordinatorsGrid = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center max-sm:gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4">
       {facultyCoordinatorMetaData.map((faculty) => (
         <ProfileCard
           key={faculty.key}

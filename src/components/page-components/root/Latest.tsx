@@ -60,8 +60,8 @@ const Latest = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute -left-12 top-1/2 -translate-y-1/2" />
-            <CarouselNext className="absolute -right-12 top-1/2 -translate-y-1/2" />
+            <CarouselPrevious className="absolute -left-8 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute -right-8 top-1/2 -translate-y-1/2" />
           </Carousel>
         </div>
       </div>
