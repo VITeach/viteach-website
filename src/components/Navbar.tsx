@@ -63,11 +63,7 @@ const Navbar = () => {
               variant="outline"
               onClickRoute="/login"
             />
-            <CustomButton
-              text="Join our community"
-              variant="default"
-              onClickRoute="/join"
-            />
+            <CustomButton text="Join" variant="default" onClickRoute="/join" />
           </div>
         </div>
       </div>
@@ -100,7 +96,7 @@ const Navbar = () => {
                 onClickRoute="/login"
               />
               <CustomButton
-                text="Join our community"
+                text="Join"
                 variant="default"
                 onClickRoute="/join"
               />

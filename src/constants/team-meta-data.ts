@@ -1,14 +1,16 @@
 export const facultyCoordinatorMetaData = [
   {
+    key: 1,
     name: 'name here',
     linkedIn: 'link here',
-    image: 'link here',
+    image: '/root/image-1.jpg',
   },
 
   {
+    key: 2,
     name: 'name here',
     linkedIn: 'link here',
-    image: 'link here',
+    image: '/root/image-2.png',
   },
 ];
 
@@ -44,7 +46,7 @@ export const obsMetaData = {
       {
         name: 'Aditya Pandey',
         role: 'Web dev lead', // I can't center divs lol
-        about: 'vahi sb lauda lehsun about random corporate shit',
+        about: 'vahi sb lauda lehsun',
         github: 'link here',
         X: 'link here',
         linkedIn: 'link here',
