@@ -1,19 +1,15 @@
+'use client';
 import { Select, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { SelectValue } from '@/components/ui/select';
 import { SelectContent } from '@/components/ui/select';
+import { useYearStore } from '@/stores/yearStore';
 
-const YearSelector = ({
-  selectedYear,
-  setSelectedYear,
-}: {
-  selectedYear: number;
-  setSelectedYear: (year: number) => void;
-}) => {
+const YearSelector = () => {
+  const year = useYearStore((s) => s.year);
+  const setYear = useYearStore((s) => s.setYear);
+
   return (
-    <Select
-      value={selectedYear.toString()}
-      onValueChange={(value) => setSelectedYear(parseInt(value))}
-    >
+    <Select value={String(year)} onValueChange={(val) => setYear(Number(val))}>
       <SelectTrigger className="w-[280px]">
         <SelectValue placeholder="Select an year" />
       </SelectTrigger>

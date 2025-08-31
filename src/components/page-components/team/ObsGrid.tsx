@@ -1,7 +1,11 @@
+'use client';
 import { obsMetaData } from '@/constants/team-meta-data';
 import { ProfileCard } from '@/components/ui/profile-card';
+import { useYearStore } from '@/stores/yearStore';
 
-const ObsGrid = ({ year }: { year: number }) => {
+const ObsGrid = () => {
+  const year = useYearStore((s) => s.year);
+
   const departments = obsMetaData[year as keyof typeof obsMetaData];
   console.log(Object.values(departments));
 
