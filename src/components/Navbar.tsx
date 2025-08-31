@@ -1,3 +1,5 @@
+'use client';
+// TODO: Make sure the navbar isn't client component
 import {
   NavigationMenu,
   NavigationMenuLink,
@@ -14,8 +16,13 @@ import {
 } from './ui/drawer';
 import { MenuIcon, XIcon } from 'lucide-react';
 import CustomButton from './CustomButton';
+import { useSession } from '@/lib/auth-client';
+import Logout from './Logout';
+import NavAuth from './NavAuth';
 
 const Navbar = () => {
+  const authenticated = useSession().data;
+
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
       <div className="mx-auto max-w-7xl max-md:hidden">
@@ -54,14 +61,7 @@ const Navbar = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-x-2">
-            <CustomButton
-              text="Login"
-              variant="outline"
-              onClickRoute="/login"
-            />
-            <CustomButton text="Join" variant="default" onClickRoute="/join" />
-          </div>
+          <NavAuth styles="flex items-center gap-x-4" />
         </div>
       </div>
 
@@ -87,16 +87,7 @@ const Navbar = () => {
               <Link href="/story">Our Story</Link>
               <Link href="/content">Digital Library</Link>
               <Link href="/team">The Team</Link>
-              <CustomButton
-                text="Login"
-                variant="outline"
-                onClickRoute="/login"
-              />
-              <CustomButton
-                text="Join"
-                variant="default"
-                onClickRoute="/join"
-              />
+              <NavAuth styles="flex flex-col gap-y-3 w-full" />
             </div>
           </DrawerContent>
         </Drawer>

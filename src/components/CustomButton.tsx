@@ -5,7 +5,13 @@ import { useRouter } from 'next/navigation';
 type CustomButtonProps = {
   text: string;
   onClickRoute?: string;
-  variant?: 'default' | 'outline' | 'secondary' | 'ghost' | 'link';
+  variant?:
+    | 'default'
+    | 'outline'
+    | 'secondary'
+    | 'ghost'
+    | 'link'
+    | 'destructive';
   size?: 'default' | 'sm' | 'lg' | 'icon';
   className?: string;
 };

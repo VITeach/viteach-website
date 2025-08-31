@@ -16,5 +16,5 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   runtime: 'nodejs',
-  matcher: ['/works'], // Apply middleware to specific routes
+  matcher: ['/profile'], // Apply middleware to specific routes
 };
