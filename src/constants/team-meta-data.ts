@@ -13,13 +13,33 @@ export const facultyCoordinatorMetaData = [
 ];
 
 export const obsMetaData = {
-  '2025': {
-    president: [],
-    'gen-sec': [],
-    school: [],
-    content: [],
-    design: [],
-    outreach: [],
+  2025: {
+    president: [
+      {
+        name: 'Akshaya',
+        role: 'President',
+        about: 'about here',
+        github: 'link here',
+        X: 'link here',
+        linkedIn: 'link here',
+        image: '/obs/2024/Aditya.jpg',
+      },
+    ],
+    gen_sec: [
+      {
+        name: 'Balamurgan',
+        role: 'General Secretary',
+        about: 'about here',
+        github: 'link here',
+        X: 'link here',
+        linkedIn: 'link here',
+        image: '/obs/2024/Aditya.jpg',
+      },
+    ],
+    // school: [],
+    // content: [],
+    // design: [],
+    // outreach: [],
     technical: [
       {
         name: 'Aditya Pandey',
@@ -28,7 +48,7 @@ export const obsMetaData = {
         github: 'link here',
         X: 'link here',
         linkedIn: 'link here',
-        image: 'link here',
+        image: '/obs/2024/Aditya.jpg',
       },
       {
         name: 'Riya Kapoor',
@@ -37,18 +57,18 @@ export const obsMetaData = {
         github: 'link here',
         X: 'link here',
         linkedIn: 'link here',
-        image: 'link here',
+        image: '/obs/2024/Aditya.jpg',
       },
     ],
   },
 
-  '2024': {
-    president: [],
-    'gen-sec': [],
-    school: [],
-    content: [],
-    design: [],
-    outreach: [],
+  2024: {
+    // president: [],
+    // gen_sec: [],
+    // school: [],
+    // content: [],
+    // design: [],
+    // outreach: [],
     technical: [
       {
         name: 'Aditya Pandey',
@@ -57,7 +77,7 @@ export const obsMetaData = {
         github: 'link here',
         X: 'link here',
         linkedIn: 'link here',
-        image: 'link here',
+        image: '/obs/2024/Aditya.jpg',
       },
       {
         name: 'Riya Kapoor',
@@ -66,7 +86,7 @@ export const obsMetaData = {
         github: 'link here',
         X: 'link here',
         linkedIn: 'link here',
-        image: 'link here',
+        image: '/obs/2024/Aditya.jpg',
       },
     ],
   },
