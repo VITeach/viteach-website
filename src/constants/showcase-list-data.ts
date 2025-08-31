@@ -21,6 +21,6 @@ export const showcaseList = [
     description:
       'The Digital Library is VITeach’s hub for planning and storing educational content. Our teams create and organize resources for students from grades 1 to 8, ensuring quality learning materials for all.',
     image: 'root/showcase/image-3.svg',
-    link: '/content',
+    link: '/digital-library',
   },
 ];

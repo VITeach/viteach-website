@@ -7,7 +7,6 @@ const ObsGrid = () => {
   const year = useYearStore((s) => s.year);
 
   const departments = obsMetaData[year as keyof typeof obsMetaData];
-  console.log(Object.values(departments));
 
   return (
     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 lg:gap-10 px-4">

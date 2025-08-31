@@ -1,5 +1,5 @@
 const DigitalLibrary = () => {
-  return <div>DigitalLibrary</div>;
+  return <div></div>;
 };
 
 export default DigitalLibrary;
