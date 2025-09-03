@@ -1,49 +1,25 @@
-'use client';
-import { useSession } from '@/lib/auth-client';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-import { Spinner } from '@/components/Spinner';
+import { auth } from '@/lib/auth';
+import { headers } from 'next/headers';
+import { redirect } from 'next/navigation';
 
-const Profile = () => {
-  const { data, isPending, error, refetch } = useSession();
-  // const router = useRouter();
+export default async function ProfilePage() {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
 
-  // useEffect(() => {
-  //   if (!data?.user && !isPending) {
-  //     router.push('/login');
-  //   }
-  // }, [data?.user, isPending, router]);
-
-  // Show loading state while checking authentication
-  if (isPending) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen">
-        <Spinner size="lg" />
-      </div>
-    );
+  if (!session?.user) {
+    redirect('/login');
   }
 
-  // Redirect if no user data
-  if (!data?.user) {
-    return null;
-  }
-
-  console.log(data);
+  const { user } = session;
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div>
-        <ul>
-          <li>Email: {data?.user?.email}</li>
-          <li>Name: {data?.user?.name}</li>
-          <li>Image: {data?.user?.image}</li>
-          <li>ID: {data?.user?.id}</li>
-          <li>Created At: {data?.user?.createdAt?.toISOString()}</li>
-          <li>Updated At: {data?.user?.updatedAt?.toISOString()}</li>
-        </ul>
-      </div>
+      <ul>
+        <li>Email: {user.email}</li>
+        <li>Name: {user.name}</li>
+        <li>ID: {user.id}</li>
+      </ul>
     </div>
   );
-};
-
-export default Profile;
+}
