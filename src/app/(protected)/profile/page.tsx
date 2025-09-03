@@ -6,13 +6,13 @@ import { Spinner } from '@/components/Spinner';
 
 const Profile = () => {
   const { data, isPending, error, refetch } = useSession();
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (!data?.user && !isPending) {
-      router.push('/login');
-    }
-  }, [data?.user, isPending, router]);
+  // useEffect(() => {
+  //   if (!data?.user && !isPending) {
+  //     router.push('/login');
+  //   }
+  // }, [data?.user, isPending, router]);
 
   // Show loading state while checking authentication
   if (isPending) {
