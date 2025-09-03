@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import { Spinner } from '@/components/Spinner';
 
 const Profile = () => {
-  const router = useRouter();
   const { data, isPending, error, refetch } = useSession();
+  const router = useRouter();
 
   useEffect(() => {
     if (!data?.user && !isPending) {
@@ -27,6 +27,8 @@ const Profile = () => {
   if (!data?.user) {
     return null;
   }
+
+  console.log(data);
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
