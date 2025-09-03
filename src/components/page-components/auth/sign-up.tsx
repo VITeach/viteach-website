@@ -132,7 +132,7 @@ export default function SignUp() {
                   email,
                   password,
                   name: `${firstName} ${lastName}`,
-                  callbackURL: '/dashboard',
+                  callbackURL: '/profile',
                   fetchOptions: {
                     onResponse: () => {
                       setLoading(false);
@@ -149,11 +149,11 @@ export default function SignUp() {
                     onSuccess: async () => {
                       setLoading(false);
                       toast.success(
-                        'Account created successfully! Redirecting to dashboard...'
+                        'Account created successfully! Redirecting to profile...'
                       );
                       // Small delay to show the success message
                       setTimeout(() => {
-                        router.push('/dashboard');
+                        router.push('/profile');
                       }, 1500);
                     },
                   },

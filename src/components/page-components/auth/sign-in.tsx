@@ -18,12 +18,13 @@ import { signIn } from '@/lib/auth-client';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
+import { useRouter } from 'next/navigation';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-
+  const router = useRouter();
   return (
     <Card className="max-w-md">
       <CardHeader>
@@ -89,6 +90,9 @@ export default function SignIn() {
                   },
                   onSuccess: () => {
                     toast.success('Successfully signed in!');
+                    setTimeout(() => {
+                      router.push('/profile');
+                    }, 1500);
                   },
                 }
               );
