@@ -8,6 +8,13 @@ const YearSelector = () => {
   const year = useYearStore((s) => s.year);
   const setYear = useYearStore((s) => s.setYear);
 
+  /*
+   * If you saw a slight issue with the dropdown shifting the whole UI,
+   * Then probably you are using chrome, and you are a retarded
+   * Use a different browser......I am just kidding, just find a fix for it.
+   * Plis
+   */
+
   return (
     <Select value={String(year)} onValueChange={(val) => setYear(Number(val))}>
       <SelectTrigger className="w-[280px]">
