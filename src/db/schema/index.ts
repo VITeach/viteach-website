@@ -5,5 +5,6 @@
  */
 
 import { user, session, account, verification } from './auth-schema';
+import { formSubmission } from './form-schema';
 
-export { user, session, account, verification };
+export { user, session, account, verification, formSubmission };

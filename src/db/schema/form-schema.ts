@@ -1,9 +1,28 @@
-import { pgTable, text, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, boolean, json } from 'drizzle-orm/pg-core';
+import { user } from './auth-schema';
 
-export const form = pgTable('form', {
-  id: text('id').primaryKey(),
-  name: text('name').notNull(),
-  email: text('email').notNull(),
-  phone: text('phone').notNull(),
-  message: text('message').notNull(),
+export const formSubmission = pgTable('form_submission', {
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  userId: text('user_id')
+    .notNull()
+    .references(() => user.id, { onDelete: 'cascade' }),
+  regNumber: text('reg_number').notNull(),
+  year: text('year').notNull(),
+  introduction: text('introduction').notNull(),
+  why: text('why').notNull(),
+  departments: json('departments').$type<string[]>().notNull(),
+  whyDep: text('why_dep').notNull(),
+  howTime: text('how_time').notNull(),
+  agree: boolean('agree').notNull(),
+  isApproved: boolean('is_approved')
+    .$defaultFn(() => false)
+    .notNull(),
+  createdAt: timestamp('created_at')
+    .$defaultFn(() => new Date())
+    .notNull(),
+  updatedAt: timestamp('updated_at')
+    .$defaultFn(() => new Date())
+    .notNull(),
 });

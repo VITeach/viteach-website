@@ -2,6 +2,7 @@
 import { actionClient } from './safe-action';
 import { formSchema } from '../lib/schema';
 import { db } from '@/db';
+import { formSubmission } from '@/db/schema/form-schema';
 // Import your form table from schema if you want to save to database
 // import { form } from '@/db/schema/form-schema';
 
@@ -9,14 +10,18 @@ export const serverAction = actionClient
   .inputSchema(formSchema)
   .action(async ({ parsedInput }) => {
     try {
-      // Here you can save the form data to your database
-      // Example:
-      // await db.insert(form).values({
-      //   id: crypto.randomUUID(),
-      //   name: parsedInput.name, // adjust based on your actual schema
-      //   email: parsedInput.email,
-      //   // ... other fields
-      // });
+      await db.insert(formSubmission).values({
+        user_id: parsedInput.user_id,
+        reg_number: parsedInput.reg_number,
+        year: parsedInput.year,
+        introduction: parsedInput.introduction,
+        why: parsedInput.why,
+        departments: parsedInput.departments,
+        why_dep: parsedInput.why_dep,
+        how_time: parsedInput.how_time,
+        agree: parsedInput.agree,
+        isApproved: false,
+      });
 
       // Log the form data for now
       console.log('Form submission received:', parsedInput);
