@@ -4,5 +4,6 @@
  */
 
 import { user, session, account, verification } from './schema/';
+import { formSubmission } from './schema/form-schema';
 
-export { user, session, account, verification };
+export { user, session, account, verification, formSubmission };

@@ -1,22 +1,19 @@
 import { pgTable, text, timestamp, boolean, json } from 'drizzle-orm/pg-core';
-import { user } from './auth-schema';
 
 export const formSubmission = pgTable('form_submission', {
   id: text('id')
     .primaryKey()
     .$defaultFn(() => crypto.randomUUID()),
-  userId: text('user_id')
-    .notNull()
-    .references(() => user.id, { onDelete: 'cascade' }),
-  regNumber: text('reg_number').notNull(),
+  user_id: text('user_id').notNull(),
+  reg_number: text('reg_number').notNull(),
   year: text('year').notNull(),
   introduction: text('introduction').notNull(),
   why: text('why').notNull(),
   departments: json('departments').$type<string[]>().notNull(),
-  whyDep: text('why_dep').notNull(),
-  howTime: text('how_time').notNull(),
+  why_dep: text('why_dep').notNull(),
+  how_time: text('how_time').notNull(),
   agree: boolean('agree').notNull(),
-  isApproved: boolean('is_approved')
+  is_approved: boolean('is_approved')
     .$defaultFn(() => false)
     .notNull(),
   createdAt: timestamp('created_at')

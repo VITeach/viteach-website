@@ -36,7 +36,8 @@ import {
 } from '@/components/ui/multi-select';
 import { Checkbox } from '@/components/ui/checkbox';
 
-export function DraftForm() {
+// eslint-disable-next-line
+export function DraftForm(user: any) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const router = useRouter();
 
@@ -76,7 +77,14 @@ export function DraftForm() {
     },
   });
 
-  const handleSubmit = form.handleSubmit(doSthAction.execute);
+  const handleSubmit = form.handleSubmit((data) => {
+    // Add the user_id to the form data before submitting
+    const formDataWithUserId = {
+      ...data,
+      user_id: user.id, // This is correct - user is already the user object from session
+    };
+    doSthAction.execute(formDataWithUserId);
+  });
   const isPending = doSthAction.status === 'executing';
 
   // Success message component
