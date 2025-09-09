@@ -6,6 +6,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from '@/components/ui/button';
 import { useForm } from 'react-hook-form';
 import { useAction } from 'next-safe-action/hooks';
+import { useState } from 'react';
+import { signOut } from '@/lib/auth-client';
+import { useRouter } from 'next/navigation';
 import {
   Form,
   FormControl,
@@ -34,12 +37,15 @@ import {
 import { Checkbox } from '@/components/ui/checkbox';
 
 export function DraftForm() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       reg_number: '',
       year: '',
-      introduction: '', // Fixed: Changed from 'Textarea-7' to 'introduction'
+      introduction: '',
       why: '',
       departments: [],
       why_dep: '',
@@ -49,8 +55,21 @@ export function DraftForm() {
   });
 
   const doSthAction = useAction(serverAction, {
-    onSuccess: () => {
+    onSuccess: async () => {
       form.reset();
+      setIsSubmitted(true);
+
+      // Wait a brief moment to show the success message
+      setTimeout(async () => {
+        try {
+          await signOut();
+          router.push('/login');
+        } catch (error) {
+          console.error('Logout error:', error);
+          // If logout fails, still redirect to login
+          router.push('/login');
+        }
+      }, 3000); // Show success message for 3 seconds
     },
     onError: (error) => {
       console.error('Form submission error:', error);
@@ -59,6 +78,43 @@ export function DraftForm() {
 
   const handleSubmit = form.handleSubmit(doSthAction.execute);
   const isPending = doSthAction.status === 'executing';
+
+  // Success message component
+  if (isSubmitted) {
+    return (
+      <div className="min-h-[400px] flex items-center justify-center">
+        <div className="text-center p-8 max-w-md mx-auto">
+          <div className="mb-6">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg
+                className="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Thank you for applying!
+            </h2>
+            <p className="text-gray-600">
+              We&apos;ve received your application and will get back to you
+              shortly via email.
+            </p>
+          </div>
+          <p className="text-sm text-gray-500">
+            You will be redirected to the login page in a moment...
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
