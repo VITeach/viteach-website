@@ -26,6 +26,8 @@ export default function SignUp() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
+  // !This is not the right way to validate this, but it's a quick fix for now.
+  // Try to use the zod schema for validation.
   const validateForm = () => {
     if (!firstName.trim() || !lastName.trim()) {
       toast.error('Please enter both first and last name');
@@ -132,7 +134,7 @@ export default function SignUp() {
                   email,
                   password,
                   name: `${firstName} ${lastName}`,
-                  callbackURL: '/profile',
+                  callbackURL: '/form',
                   fetchOptions: {
                     onResponse: () => {
                       setLoading(false);
@@ -153,7 +155,7 @@ export default function SignUp() {
                       );
                       // Small delay to show the success message
                       setTimeout(() => {
-                        router.push('/profile');
+                        router.push('/form');
                       }, 1500);
                     },
                   },
