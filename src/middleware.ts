@@ -4,7 +4,7 @@ export async function middleware(request: NextRequest) {
   const authCookie = request.cookies.get('better-auth.session_token');
 
   // Will clean this a little bit later using some sort of array and doing a contain
-  const protectedRoutes = ['/profile', '/another'];
+  const protectedRoutes = ['/profile', 'form'];
   if (!authCookie && protectedRoutes.includes(request.nextUrl.pathname)) {
     return NextResponse.redirect(new URL('/login', request.url));
   }
@@ -21,5 +21,5 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   // matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
-  matcher: ['/login', '/join', '/profile', '/another'],
+  matcher: ['/login', '/join', '/profile', '/form'],
 };

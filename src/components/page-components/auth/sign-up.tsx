@@ -151,7 +151,7 @@ export default function SignUp() {
                     onSuccess: async () => {
                       setLoading(false);
                       toast.success(
-                        'Account created successfully! Redirecting to profile...'
+                        'Account created successfully! Redirecting to form...'
                       );
                       // Small delay to show the success message
                       setTimeout(() => {
