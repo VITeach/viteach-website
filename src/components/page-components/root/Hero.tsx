@@ -30,8 +30,8 @@ const Hero = () => {
         </div>
 
         <Image
-          src="book-lover.svg"
-          alt="Hero"
+          src="/book-lover.svg"
+          alt="Illustration of a student reading a book"
           width={200}
           height={200}
           className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 lg:hidden"
@@ -65,8 +65,8 @@ const Hero = () => {
         className="p-10 sm:p-16 lg:p-20 rounded-full"
       >
         <Image
-          src="book-lover.svg"
-          alt="Hero"
+          src="/book-lover.svg"
+          alt="Illustration of a student reading a book"
           width={200}
           height={200}
           className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 max-lg:hidden"

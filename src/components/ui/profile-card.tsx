@@ -54,7 +54,9 @@ export function ProfileCard(props: ProfileCardProps) {
         <div className="w-full aspect-square bg-gray-200 dark:bg-gray-700 rounded-3xl overflow-hidden mb-6 flex items-center justify-center">
           <Image
             src={imageUrl || ''}
-            alt={name || ''}
+            alt={
+              name ? `${name}${title ? ` — ${title}` : ''}` : 'Profile photo'
+            }
             width={400}
             height={400}
             className="w-full h-full object-cover"
