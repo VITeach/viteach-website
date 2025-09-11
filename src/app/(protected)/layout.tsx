@@ -1,6 +1,11 @@
 import { auth } from '@/lib/auth';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 const ProtectedLayout = async ({ children }: { children: React.ReactNode }) => {
   // Now we have to make sure that the logout button takes us out from the protected layout

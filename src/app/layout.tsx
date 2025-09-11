@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
@@ -15,9 +15,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'VITeach',
-  description:
-    'Celebrating 10+ years of inspiring students, sharing knowledge, and making learning fun. Dive into stories, meet our mentors, and be part of our legacy.',
+  metadataBase: new URL('https://viteach-website-ten.vercel.app'), // update to your canonical domain
+  title: {
+    default: 'VITeach',
+    template: '%s | VITeach',
+  },
+  description: 'Celebrating 10+ years of inspiring students…',
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    url: 'https://viteach-website-ten.vercel.app',
+    siteName: 'VITeach',
+    title: 'VITeach',
+    description: 'Celebrating 10+ years of inspiring students…',
+    images: [
+      { url: '/root/image-1.jpg', width: 1200, height: 630, alt: 'VITeach' },
+    ],
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
