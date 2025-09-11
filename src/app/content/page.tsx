@@ -53,37 +53,11 @@ const Content = () => {
               />
             </motion.div>
 
-            {/* The YouTube Channel */}
+            {/* VITeach Tales */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500"
-            >
-              <h3 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4">
-                The YouTube Channel
-              </h3>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
-                Learning goes beyond walls when stories and lessons are shared
-                through moving pictures. Our YouTube channel transforms concepts
-                into engaging visuals, extending the reach of VITeach to anyone
-                with curiosity and a screen. It is a window into how we teach,
-                learn, and grow together.
-              </p>
-              <CustomButton
-                text="Watch Videos"
-                onClickRoute="https://youtube.com"
-                variant="ghost"
-                size="sm"
-                className="w-full sm:w-auto"
-              />
-            </motion.div>
-
-            {/* VITeach Tales */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500"
             >
               <h3 className="text-xl sm:text-2xl font-bold text-green-900 mb-4">
@@ -107,9 +81,9 @@ const Content = () => {
 
             {/* The Blog */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500"
             >
               <h3 className="text-xl sm:text-2xl font-bold text-purple-900 mb-4">
@@ -125,6 +99,32 @@ const Content = () => {
               <CustomButton
                 text="Read Blog"
                 onClickRoute="/blogs"
+                variant="ghost"
+                size="sm"
+                className="w-full sm:w-auto"
+              />
+            </motion.div>
+
+            {/* The YouTube Channel */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500"
+            >
+              <h3 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4">
+                The YouTube Channel
+              </h3>
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
+                Learning goes beyond walls when stories and lessons are shared
+                through moving pictures. Our YouTube channel transforms concepts
+                into engaging visuals, extending the reach of VITeach to anyone
+                with curiosity and a screen. It is a window into how we teach,
+                learn, and grow together.
+              </p>
+              <CustomButton
+                text="Watch Videos"
+                onClickRoute="https://youtube.com"
                 variant="ghost"
                 size="sm"
                 className="w-full sm:w-auto"
