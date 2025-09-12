@@ -9,7 +9,7 @@ const ObsGrid = () => {
   const departments = obsMetaData[year as keyof typeof obsMetaData];
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 lg:gap-10 px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 px-4 justify-items-center">
       {Object.values(departments).map((department) =>
         department.map((obs) => (
           <ProfileCard
