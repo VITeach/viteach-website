@@ -20,14 +20,14 @@ const Hero = () => {
         >
           Light a spark, ignite a fire.
         </motion.div>
-        <div className="text-xl sm:text-2xl flex items-center gap-x-2 justify-center lg:justify-start">
+        <h1 className="text-xl sm:text-2xl flex items-center gap-x-2 justify-center lg:justify-start">
           <span className="font-light">We</span>
           <span className="text-xl sm:text-2xl font-bold text-red-900">
             <CustomTypewriter
               strings={['teach!', 'inspire!', 'change lives!']}
             />
           </span>
-        </div>
+        </h1>
 
         <Image
           src="/book-lover.svg"
