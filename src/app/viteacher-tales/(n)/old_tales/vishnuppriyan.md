@@ -1,0 +1,35 @@
+# Vishnuppriyan’s Tale
+
+> “Design is more than just visuals; it’s about telling a story, creating connections, and leaving a lasting impression.”
+
+When I joined **VITeach**, it was driven by a passion for sharing knowledge and fostering a sense of community. The club’s mission resonated deeply with me, and I was eager to contribute in a way that aligned with my skills and interests.
+
+Graphic design has always been a personal passion of mine. I began by taking on small design tasks—creating posters, promotional materials, and other visual content required by the club. As I experimented with different styles and concepts, my work gradually gained recognition. This journey of growth eventually led to greater responsibilities, and I was entrusted with leading the entire **Design Team**.
+
+---
+
+As the **Design Lead**, I oversaw all visual content, including event posters, t-shirt designs, promotional reels, and social media graphics. However, my approach to design went beyond aesthetics. It was about capturing attention, sparking curiosity, and building a cohesive visual identity for VITeach. Alongside static posters, we began creating **Instagram reels** for event promotions, which significantly boosted engagement. Every piece of content had a single objective—to make VITeach stand out.
+
+One of the most challenging aspects of my role was managing the design workload, especially during periods when multiple events overlapped, each requiring its own set of visuals. Tight deadlines and high-pressure situations were common. Instead of merely delegating tasks, I worked closely with my team to ensure no one felt overwhelmed. Many late nights were spent refining designs and making last-minute adjustments so that every event received the attention it deserved.
+
+---
+
+Collaborating with different teams within VITeach was one of the most enriching parts of my leadership journey. Each event required coordination with departments such as **content, marketing, and the school team**, demanding seamless alignment. One standout project was the **OpTeach session**, where our team visited the *Panchayat Union School in Nallambakkam* to teach students about optics. After sharing our experience on Instagram, we reached a remarkable milestone—the **official VIT Chennai page followed VITeach**. This moment highlighted how impactful design, when paired with meaningful initiatives, can amplify reach and influence.
+
+Another proud achievement was when **two of our promotional reels crossed 10,000 views**, a first in the history of VITeach’s design team. Witnessing such engagement reaffirmed the power of effective design and strategic marketing. Additionally, I was honoured to be the **first Design Head to create over 50 posters in a single academic year**. Maintaining creativity and uniqueness across such volume was challenging, but it remains one of the most rewarding accomplishments of my tenure.
+
+---
+
+There were inevitable moments of last-minute changes and unexpected hurdles, but we always adapted while maintaining the quality of our work. These collaborative efforts made the design process dynamic, fulfilling, and deeply meaningful.
+
+Looking back on my journey as Design Lead, I gained lessons far beyond design techniques. It shaped me as a **leader, collaborator, and problem-solver**. My time at VITeach was not just about creating posters—it was about building something meaningful and lasting.
+
+For anyone passionate about design, my advice is simple: **keep creating, keep experimenting, and most importantly, enjoy the journey.**
+
+---
+
+**– Blog written by:**  
+**Vishnuppriyan**
+
+**Image:**  
+![](/story/vishnuppriyan.jpg)

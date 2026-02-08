@@ -1,0 +1,110 @@
+# Lavanya’s Tale
+
+> *“To me, VITeach was a medium of self-discovery.”*
+
+When given the chance to interview and write a tale about one of the outgoing members’ batch, I chose **Lavanya Darshni**, who handled the **Content and Social Media Department** at VITeach during her tenure.
+
+When I met her for the first time, my immediate thought was, *“Oh, she gets along with almost everyone.”* She seemed approachable in every sense, and I was fascinated by the energy and confidence she carried wherever she went. During the interview, I learned that socializing hadn’t always been easy for her in the beginning. Seeing how far she had come made me admire her confidence and her way with people even more, and it left me eager to know her story better.
+
+---
+
+One ordinary day, Lavanya came across a recruitment mail for VITeach sent by the Office of Student Welfare. Nothing special — or so it seemed. Until then, she wasn’t part of any clubs. When she learned that VITeach worked towards educating underprivileged children — essentially functioning like an NGO — she saw it as her chance to be part of something meaningful.
+
+Social work had always interested her, and VITeach felt like the perfect place to start. The fact that she loved teaching and would get the opportunity to do so only strengthened her decision to join.
+
+So she made up her mind and began engaging actively — attending meetings and exploring the different departments within VITeach, telling herself, *“Let’s just explore.”*
+
+Time flew, and soon she was entrusted with the responsibility of handling the **Content and Social Media Department**. This was especially challenging because the department itself was new — a merger of the former content and marketing teams that previously functioned independently. Defining its boundaries and responsibilities wasn’t easy.
+
+> “We see the potential in you, and you are the chosen one — the best fit for this position.”
+
+Those words felt overwhelming to her at the time. Struggling with self-confidence and self-belief, she questioned herself — but eventually decided to trust the process.
+
+> *“Maybe this is God’s plan,”*  
+she thought — and chose to take the leap anyway.
+
+---
+
+Lavanya’s tenure as an Office Bearer — and earlier as a **Junior Core Committee (JCC) member** — was particularly challenging, as it coincided with a phase when she was diagnosed with **major depressive disorder and severe anxiety disorder**.
+
+> “Those voices constantly running in my head, shivering while speaking up, resistance to executing tasks — smiling and being the local friendly clown was my way of coping with fear, anxiety, mood swings, and depressive episodes,”  
+she recalls.
+
+Despite everything, she took initiative, ensured conversations flowed smoothly, avoided awkward silences during meetings, and made sure everyone felt heard and included. Over time, colleagues became friends, and with their support, things began to feel more manageable.
+
+---
+
+Together with her co-lead, she coined a tagline for the department during orientation:
+
+> **“Sharing our vision through content creation,  
+> making an impact through social media is our mission.”**
+
+Her primary goal was to revive VITeach’s Instagram page and increase the club’s presence on LinkedIn.
+
+Lavanya aimed to expand VITeach’s social media and website with **diverse content**, covering topics ranging from education and mental health to environmental awareness, learning disabilities, and myth busters. Since the audience primarily consisted of fellow VITians, her focus was on educating them about lesser-known or taboo topics — aligning content creation with the club’s educational mission.
+
+---
+
+As part of celebrating **10 years of VITeach**, the team wanted to do something different. Lavanya and the Content Team came up with the idea of a throwback series titled **“The Legacy of VITeach.”**
+
+While researching, she discovered the origins of the club and an event called **“Kid’s Sunday”**, where children of the housekeeping staff were brought into classrooms every Sunday and taught various subjects. Deeply moved, she felt the need to pay tribute to the effort behind it and pitched the idea of reviving the event after several years.
+
+Her fellow OBs loved the idea. Coincidentally, the following week, the faculty coordinator requested the team to conduct a workshop for the children of the housekeeping staff. It felt like manifestation turning real — one of the highlights of Lavanya’s journey.
+
+Although she wasn’t physically present, she coordinated online coverage of the event through volunteers on Instagram. This inspired her to write a blog documenting the entire experience. Once **“Legacy of VITeach”** was published, seniors from various batches reached out, appreciating the effort taken to collect memories and honour the club’s history.
+
+Seeing seniors tag their peers and relive their college days filled her with nostalgia and joy.
+
+---
+
+During orientation, Lavanya, her co-lead, and former Content JCCs were overwhelmed when the faculty coordinator praised the team, calling them:
+
+> **“The unsung heroes of the club —  
+> the ones who document and present its activities to the world.”**
+
+Operating remotely was one of the toughest challenges she faced. While the team worked together on campus, she navigated responsibilities alone behind a screen, battling anxiety, impulsivity, and thoughts of quitting.
+
+> “It was a lot. I’m glad our team managed it all.  
+> From Core to JCC, friends and volunteers —  
+> I couldn’t have done it without them,”  
+she says.
+
+---
+
+Her school visits left a lasting impact. Interacting with children from different age groups shifted her perspective on life and became a therapeutic experience she remains grateful for.
+
+Being a **non-Tamil speaker**, language barriers made direct communication difficult — yet these interactions often turned unexpectedly wholesome and heartwarming.
+
+One such memory comes from an event called **Opteach**, where she managed photography while others taught optical physics. While clicking pictures of a group of girls, she showed them a hand gesture while saying *“smile.”* From that moment on, every time she said the word, the girls repeated the same gesture and smiled.
+
+> “It taught me that being a good teacher isn’t about memorizing and repeating answers —  
+> it’s about how you interact and connect,”  
+she reflects.
+
+Another moment that stayed with her involved teaching reflection and refraction to sixth graders. When two students answered correctly, she exclaimed, *“Nice! Ten on ten!”*
+
+Their faces lit up.
+
+> “Akka? Ten on ten?”  
+They were genuinely thrilled.
+
+That moment made her realize how something small to us could mean everything to someone else. The respect children hold for teachers suddenly felt real to her — and she knew she had found where she belonged.
+
+---
+
+When asked about the best thing that happened during her tenure, Lavanya replied:
+
+> *“I found a group of people I can rely on.  
+> From lovely juniors to amazing seniors and my beloved friends —  
+> pure, selfless friendships are precious.”*
+
+To readers, her message is simple yet powerful:
+
+> *“Everyone is the main character of their own story.  
+> If I can do it, you can too.”*
+
+Whether it’s for society, loved ones, or oneself — the change we seek begins within us. We just need to find the light in the dark and follow it.
+
+---
+
+**~ Nganthoiba Ayekpam**

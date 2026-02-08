@@ -1,0 +1,38 @@
+> “As AI floods the internet with soulless paragraphs, I believe every author should leave a fingerprint on their words.  
+> Mine? A dash of humour—because if AI is going to take over, at least let’s have a laugh before it does.”
+>
+> — **Deepesh Sai, Ex Content JCC**
+
+---
+
+I have always wanted to explore all the clubs and chapters in VIT, and right there I came across **VITeach**. I was moved by the origins of this decade-old club and its rich heritage. As I was going through the pictures, I found memories of my younger self tutoring the kids around my home.
+
+Wholeheartedly, I applied to join VITeach and got in as a **Content Member under Jafrin**.
+
+I still remember my very first task — **Stationery Drive 1.0**. I spent **3–4 hours every day** at the event collecting stationery and handling marketing. In the meantime, I grew close to the OBs and other volunteers. They felt like *my kind of people* — more than that, they felt like **family**.
+
+I spent a lot of time with the content team and was soon promoted to **Content JCC**, along with **Dhruv** and **Abhinay**, under our Lead **Jafrin**. She was like a mother to us. I might sound dramatic, but if you ask Dhruv or Abhinay, they’ll say the same. She guided us through everything — from club politics to skill-building.
+
+My first task as a JCC was to welcome the next batch of **FFCS members** with a PPT explaining every team’s heritage and workflow. I designed the overall PPT, and everyone loved it. If you ask any OB or JCC, they’ll tell you — *I make the best PPTs*. These little appreciations made me happy and helped me love myself more for who I am.
+
+Coming to **school trips**, I’ve marked my presence on every visit. Every kid knew me, and seeing their innocence while teaching and handling them was a completely different feeling altogether.
+
+One of my favourite contributions was my **expo idea** — a game using **Jenga blocks**, which turned out to be an absolute blockbuster. Organising **Escape Verse** was another huge success.
+
+There used to be a saying —  
+> *“Content JCCs are the best JCCs”*  
+and we truly lived up to that name.
+
+I didn’t apply for OB because I felt **Dhruv and Abhinay** would serve better in that role. But overall, **VITeach has always been my favourite club**.
+
+A huge shoutout to **Dhruv and Abhinay**, my teammates who always had my back (thank you for stepping in when I couldn’t show up).  
+And the biggest thanks to **Jafrin** — for shaping my career, helping me overcome stage fear, improving my social skills, and teaching me lessons that go far beyond the club.
+
+Thank you **Jafrin, Dhruv, Abhinay, my friends, and VITeach** for all the memories.
+
+---
+
+**— Blogged by Varun Krishnan**
+
+![](/story/deepesh1.jpg)
+![VITeach OBs](/story/deepesh2.jpg)

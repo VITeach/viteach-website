@@ -1,0 +1,32 @@
+> “If you are a passionate teacher or someone who would love to impact society positively, all I would like to say is:  
+> **Join the club, choose a department, and make a difference.**”
+
+Teaching has always been my passion since I was a child. When VITeach gave me the opportunity, I was more than glad to take it up and pursue it wholeheartedly. I was in my second year when I joined the club. Given my passion for teaching, it was only natural for me to join the **School Department**. The major task as a school team member was preparing study materials for the children, including presentations and worksheets. The incredible support of the seniors from the club during our interactions paved the way for me to understand the responsibilities, the motto, and the ultimate goal of the club.
+
+---
+
+Later that semester, from a large pool of volunteers, **20 enthusiastic members** were selected for the **Junior Core Committee**, and I am glad to have been one of them. Together, we organized many events during that period. The anticipation before events, the satisfaction after successfully wrapping them up, and all the moments in between are memories I will cherish for a lifetime.
+
+When I stepped up as the **Head of the School Department**, my primary focus was to standardize the materials in alignment with the **Tamil Nadu State Board syllabus**. Additionally, we worked on making these materials publicly accessible through the club’s **digital library platform**, ensuring that anyone in need could benefit from them.
+
+---
+
+Every event, every meeting, and every photoshoot conducted on campus for the club will always remain unforgettable. Choosing one best memory wouldn’t feel right, as every experience holds a special place in my heart. Each moment contributed in its own way to my journey.
+
+However, the **school visits** stand out as the highlights of my time in VITeach. Walking into a room filled with young minds bubbling with excitement, their big, round eyes sparkling with curiosity as they tried to understand the reason for our arrival, is truly a sight to live for. Their eagerness to interact was infectious and deeply rewarding. The aspirations of those little hearts—dreams of what they might achieve one day—shone like beacons of hope.
+
+---
+
+As I pause and look back, I feel an immense sense of pride in how far the club has come. VITeach’s motto has expanded to include **raising awareness about persisting social issues**. While such awareness may not be essential to understanding science or mathematics, it is crucial for navigating the world. I am confident that this vision will elevate the club to the next level.
+
+The enthusiasm of everyone involved—**office bearers, volunteers, and faculty coordinators**—was truly remarkable. I believe we are making a meaningful impact together. I am deeply grateful to everyone who has been a part of this journey with me. VITeach gave me a wonderful opportunity to give back to society.
+
+If you are a passionate teacher or someone who wishes to create a positive impact, I wholeheartedly encourage you to **join the club, choose a department, and make a difference**. I can assure you that the journey will be filled with passion, growth, impactful contributions, and unforgettable memories—just as mine was.
+
+---
+
+**– Blog written by:**  
+**Harini Karthikeyan**
+
+**Image:**  
+![](/story/varshini.jpg)
